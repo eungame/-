@@ -55,6 +55,7 @@
  <br>
 <ol>
 <li><a href="#문법">파이썬(python) & C언어 기초문법</a></li>
+ <li><a href="#퀴즈">Quiz(퀴즈)</a></li>
 </ol>
 </td>
 
@@ -78,7 +79,34 @@
 
 
 </div>
+  
+  <div id="퀴즈">   
+    <br><br>
+다음 코드를 실행 시 출력화면에 출력될 글자를 입력하시오.
+>>> a = 3
+>>> if a > 2 and a < 4 :
+...     print("OK")
 
+   
+  
+  
+    <input type="text" id="q3"/>
+<input type="button" value="제출3" onclick="conf3();"/>
+
+<script>
+function conf3(){
+    var a = document.getElementById("q3").value;
+    if(a=="OK"){
+        alert('정답입니다');
+    } else {
+        alert('오답입니다');
+    }
+}
+  </script>
+  
+     <br><br>
+  
+</div>
 
 
   <h3>이 사이트 페이지 내용물의 저작권(copyright)는 '제일정보처리학원' 보조강사(메일주소: chung9562@naver.com)에게 있습니다. </h3>
