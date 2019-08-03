@@ -32,6 +32,13 @@
 </head>
 
 <body>
+ <script>
+document.documentElement.addEventListener('touchstart',function(event){
+if(event.touches.length<1){
+event.prevetnDefault();
+}
+},false);
+</script>
 
 <body background="컴퓨터.png">
 <br>
