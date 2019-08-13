@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=1.0">
+
+ <title>제일정보처리학원</title>
+<style>
+@media screen and (min-width: 800px) {
+#mobile_menu{display:none;}
+ul{
+  list-style:none;
+}
+}
+    @media screen and (max-width: 800px) {
+#li1>a{text-decoration:none;color:white;}
+ul{
+  list-style:none;
+}
+     
+.sizeSmall{width:80%; height:65%;}
+.sizeNormal{width:90%; height:75%;}
+.sizeLarge{width:95%;height:85%;}
+.sizeSuperLarge{width:90%;height:120%;}
+     
+#menu{display:none;}
+#main_content{display:none;}
+#bottom{display:none;}
+#mobile_intro>a{
+display:block;
+top:5%;
+align:center;
+text-align:center;
+font-weight:600;
+width:100%;
+padding:5px;
+background-color:#FEBDFA;
+color:black;
+text-decoration:none;
+}
+#li1>a{
+display:inline-block;
+top:10%;
+text-align:center;
+font-weight:1000;
+width:95%;
+background-color:#FCF9BA;
+color:black;
+}
+#li1 ul{
+display:none;
+position:absolute;
+left:0px;
+top:18%;
+padding:10px 0px;
+width:100%;
+background-color:white;
+color:#fff;
+box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+#li1 ul a{
+text-decoration:none;
+display:block;
+padding:10px;
+text-align:left;
+border-top:1px solid #eaeaea;
+}
+#li1 ul li:first-child a{
+border-top:none;
+}
+#li1:hover>ul{
+display:block;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="mobile_intro">
+<a href="computerhome.html">←이전 메뉴로</a>
+</div>
+
+
+<div id="mobile_top_menu">
+<ul>
+<li id="li1">
+<a href="모바일_컴활정보처리.html">사무자동화능력<br>(OA)</a>
+<ul>
+<li><a href="모바일_컴활정보처리.html#컴퓨터활용능력">컴퓨터활용능력</a></li>
+<li><a href="모바일_컴활정보처리.html#정보처리기능사">정보처리기능사</a></li>
+<li><a href="모바일_컴활정보처리.html#퀴즈">Quiz(퀴즈)</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="mobile_content1">
+
+<div id="컴퓨터활용능력">    
+
+ <img class="sizeLarge" src="슬라이드1.png"/>
+ <img class="sizeLarge" src="슬라이드2.png"/>
+ <img class="sizeLarge" src="슬라이드3.png"/>
+ <img class="sizeLarge" src="슬라이드4.png"/>
+
+
+
+</div>
+
+<div id="정보처리기능사">    
+ <img class="sizeLarge" src="슬라이드5.png"/>
+ <img class="sizeLarge" src="슬라이드6.png"/>
+ <img class="sizeLarge" src="슬라이드7.png"/>
+
+
+</div>
+  
+  <div id="퀴즈">    
+
+   ------------보기------------<br>
+   오징 원시 기계 어셈 고급 c언<br>
+   ----------------------------<br>
+     Q.컴퓨터활용능력과 정보처리기능사의 내용 중에서, 
+   일반적으로 컴퓨터는 사람이 알아들을 수 있을만한 문법체계로인해 작성된 고급 언어를
+   0과 1로만 이루어진 이진법인 'ㅇㅇ어'로 변환시켜서 명령을 해석한다.
+   이 때 'ㅇㅇ'에 들어갈 알맞은 단어를 위 보기 중 골라 밑에 텍스트창에 입력하시오.<br>
+   
+  
+  <input type="text" id="q1"/>
+<input type="button" value="제출1" onclick="conf1();"/>
+
+<script>
+function conf1(){
+    var a = document.getElementById("q1").value;
+    if(a=="기계"){
+        alert('정답입니다');
+    } else {
+        alert('오답입니다');
+    }
+}
+  </script>
+  
+ <br><br>
+
+</div>
+  
+  
+
+컴퓨터 활용능력 자격평가 기관: 대한상공회의소<br>
+정보처리기능사 자격평가 기관: 큐넷, 한국산업인력공단
+
+
+</div>
+
+</body>
+</html>

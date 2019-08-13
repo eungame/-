@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=1.0">
+
+ <title>제일정보처리학원</title>
+<style>
+@media screen and (min-width: 800px) {
+#mobile_menu{display:none;}
+ul{
+  list-style:none;
+}
+}
+    @media screen and (max-width: 800px) {
+#li1>a{text-decoration:none;color:white;}
+ul{
+  list-style:none;
+}
+     
+.sizeSmall{width:80%; height:65%;}
+.sizeNormal{width:90%; height:75%;}
+.sizeLarge{width:95%;height:85%;}
+.sizeSuperLarge{width:90%;height:120%;}
+     
+#menu{display:none;}
+#main_content{display:none;}
+#bottom{display:none;}
+#mobile_intro>a{
+display:block;
+top:5%;
+align:center;
+text-align:center;
+font-weight:600;
+width:100%;
+padding:5px;
+background-color:#FEBDFA;
+color:black;
+text-decoration:none;
+}
+#li1>a{
+display:inline-block;
+top:10%;
+text-align:center;
+font-weight:1000;
+width:95%;
+background-color:#FCF9BA;
+color:black;
+}
+#li1 ul{
+display:none;
+position:absolute;
+left:0px;
+top:18%;
+padding:10px 0px;
+width:100%;
+background-color:white;
+color:#fff;
+box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+#li1 ul a{
+text-decoration:none;
+display:block;
+padding:10px;
+text-align:left;
+border-top:1px solid #eaeaea;
+}
+#li1 ul li:first-child a{
+border-top:none;
+}
+#li1:hover>ul{
+display:block;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="mobile_intro">
+<a href="computerhome.html">←이전 메뉴로</a>
+</div>
+
+
+<div id="mobile_top_menu">
+<ul>
+<li id="li1">
+<a href="모바일_컴퓨터프로그래밍언어.html">프로그래밍<br>(coding)</a>
+<ul>
+<li><a href="모바일_컴퓨터프로그래밍언어.html#문법">파이썬(python)&C언어 기초문법</a></li>
+<li><a href="모바일_컴퓨터프로그래밍언어.html#퀴즈">Quiz(퀴즈)</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div id="mobile_content1">
+
+<div id="문법">    
+
+ <img class="sizeLarge" src="슬라이드15.png"/>
+ <img class="sizeLarge" src="슬라이드16.png"/>
+ <img class="sizeLarge" src="문법변수설정.png"/>
+ <img class="sizeLarge" src="문법산술연산자.png"/>
+ <img class="sizeLarge" src="문법논리연산자.png"/>
+ <img class="sizeLarge" src="문법조건문.png"/>
+ <img class="sizeLarge" src="슬라이드21.png"/>
+ <img class="sizeLarge" src="문법함수.png"/>
+
+
+
+</div>
+  
+  <div id="퀴즈">   
+    <br><br>
+Q. 다음 코드를 실행 시 출력화면에 출력될 글자를 입력하시오.<br><br>
+>>> a = 3<br>
+>>> if a > 2 and a < 4 :<br>
+...     print("OK")<br>
+
+   
+  
+  
+    <input type="text" id="q3"/>
+<input type="button" value="제출3" onclick="conf3();"/>
+
+<script>
+function conf3(){
+    var a = document.getElementById("q3").value;
+    if(a=="OK"){
+        alert('정답입니다');
+    } else {
+        alert('오답입니다');
+    }
+}
+  </script>
+  
+     <br><br>
+  
+</div>
+
+
+  <h3>이 사이트 페이지 내용물의 저작권(copyright)는 '제일정보처리학원' 보조강사(메일주소: chung9562@naver.com)에게 있습니다. </h3>
+
+
+</div>
+
+</body>
+</html>
